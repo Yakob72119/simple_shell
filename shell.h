@@ -77,4 +77,9 @@ void quit(char **);
 extern void non_interactive(void);
 extern void initializer(char **current_command, int type_command);
 
+/*functions in getline*/
+char *custom_getline();
+int main();
+
+
 #endif /*SHELL_H*/
