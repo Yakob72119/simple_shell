@@ -1,7 +1,7 @@
 # 0x16. C - Simple Shell
  Project done by teams of 2 people (Team Members: Kassahun.S, Yakob.B)
 
-# List of allowed functions and system calls
+## List of allowed functions and system calls
 access (man 2 access)
 chdir (man 2 chdir)
 close (man 2 close)
@@ -34,10 +34,10 @@ wait3 (man 2 wait3)
 wait4 (man 2 wait4)
 write (man 2 write)
 
-# Compilation
+## Compilation
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
 
-# files
+## files
 - [shell.h](https://github.com/Yakob72119/simple_shell/blob/master/shell.h) - is the header file which contains the standared header file and prototype of o function used in the program.
 - [main.c](https://github.com/Yakob72119/simple_shell/blob/master/main.c) - initialize the program with infinite loop by call the prompt function
 - [README.md](https://github.com/Yakob72119/simple_shell/blob/master/README.md) - description about the project repo
@@ -50,22 +50,22 @@ write (man 2 write)
 - [non_interact_function.c](https://github.com/Yakob72119/simple_shell/blob/master/non_interact_function.c) - This function is designed to handle the execution of commands when the shell is running in a non-interactive mode, allowing it to process commands from scripts or input sources other than a terminal.
 - [utils.c](https://github.com/Yakob72119/simple_shell/blob/master/utils.c) - These functions collectively provide essential functionality for parsing, executing and handling various types of shell commands, making them suitable for use in a shell program or similar applications.
 
-# Tasks
+## Tasks
 
-# 0. Betty would be proud 
-# 1. Simple shell 0.1
-# 2. Simple shell 0.2
-# 3. Simple shell 0.3
-# 4. Simple shell 0.4
-# 5. Simple shell 1.0
-# 6. Simple shell 0.1.1
-# 7. Simple shell 0.2.1
-# 8. Simple shell 0.4.1
-# 9. setenv, unsetenv
-# 10. cd
-# 11. ;
-# 12. && and ||
-# 13. alias
-# 14. Variables
-# 15. Comments
-# 16. File as input
+### 0. Betty would be proud 
+### 1. Simple shell 0.1
+### 2. Simple shell 0.2
+### 3. Simple shell 0.3
+### 4. Simple shell 0.4
+### 5. Simple shell 1.0
+### 6. Simple shell 0.1.1
+### 7. Simple shell 0.2.1
+### 8. Simple shell 0.4.1
+### 9. setenv, unsetenv
+### 10. cd
+### 11. ;
+### 12. && and ||
+### 13. alias
+### 14. Variables
+### 15. Comments
+### 16. File as input
