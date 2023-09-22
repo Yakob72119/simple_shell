@@ -1,21 +1,6 @@
 # 0x16. C - Simple Shell
  Project done by teams of 2 people (Team Members: Kassahun.S, Yakob.B)
 
-# General
-Who designed and implemented the original Unix operating system
-Who wrote the first version of the UNIX shell
-Who invented the B programming language (the direct predecessor to the C programming language)
-What is the difference between a function and a system call
-How to create processes
-How does a shell work
-What is a pid and a ppid
-How to manipulate the environment of the current process
-What are the three prototypes of main
-How does the shell use the PATH to find the programs
-How to execute another program with the execve system call
-How to suspend the execution of a process until one of its children terminates
-What is EOF / “end-of-file”?
-
 # List of allowed functions and system calls
 access (man 2 access)
 chdir (man 2 chdir)
@@ -53,9 +38,10 @@ write (man 2 write)
 `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
 
 # files
-- main.h - is the header file which contains the standared header file and prototype of o function used in the program.
+- [shell.h](https://github.com/Yakob72119/simple_shell/blob/master/shell.h) - is the header file which contains the standared header file and prototype of o function used in the program.
 - main.c - initialize the program with infinite loop by call the prompt function
 - README.md - description about the project repo
+- helper
 - man_1_simple_shell - is the man page for the shell we are going to write.
 - AUTHORS - file at the  root of your repository, listing all individuals having contributed content to the repository. 
 - special_character - It identiies if the special inputs such as if the frist input is slash,the user typed exit or env...
@@ -63,3 +49,23 @@ write (man 2 write)
 - cmd.c - it finds the command the user entered.
 - execute.c - execute the command.
 - prompt.c - it use getline system call to read the input from the user and run infinite loop with fork to keep prompt going.
+
+# Tasks
+
+# 0. Betty would be proud 
+# 1. Simple shell 0.1
+# 2. Simple shell 0.2
+# 3. Simple shell 0.3
+# 4. Simple shell 0.4
+# 5. Simple shell 1.0
+# 6. Simple shell 0.1.1
+# 7. Simple shell 0.2.1
+# 8. Simple shell 0.4.1
+# 9. setenv, unsetenv
+# 10. cd
+# 11. ;
+# 12. && and ||
+# 13. alias
+# 14. Variables
+# 15. Comments
+# 16. File as input
