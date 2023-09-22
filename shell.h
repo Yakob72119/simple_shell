@@ -78,8 +78,8 @@ extern void non_interactive(void);
 extern void initializer(char **current_command, int type_command);
 
 /*functions in getline*/
-char *custom_getline();
-int main();
-
+ssize_t get_input(info_t *);
+int _getline(info_t *, char **, size_t *);
+void sigintHandler(int);
 
 #endif /*SHELL_H*/
