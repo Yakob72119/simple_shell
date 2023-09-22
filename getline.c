@@ -90,11 +90,9 @@ ssize_t get_input(info_t *info)
 
 /**
  * read_buf - Reads data from a buffer.
- * 
  * @info: A parameter struct that will be populated with the read data.
  * @buf: The source buffer from which data will be read.
  * @i: The number of bytes to read from 'buf'.
- *
  * Return: The result of the read operation, which could be an error code or
  * the number of bytes successfully read.
  */
