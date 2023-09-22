@@ -39,16 +39,16 @@ write (man 2 write)
 
 # files
 - [shell.h](https://github.com/Yakob72119/simple_shell/blob/master/shell.h) - is the header file which contains the standared header file and prototype of o function used in the program.
-- main.c - initialize the program with infinite loop by call the prompt function
-- README.md - description about the project repo
-- helper
-- man_1_simple_shell - is the man page for the shell we are going to write.
-- AUTHORS - file at the  root of your repository, listing all individuals having contributed content to the repository. 
-- special_character - It identiies if the special inputs such as if the frist input is slash,the user typed exit or env...
-- string.c -it handles the strings(string length, write string,find string in directory,concatane strings....)
-- cmd.c - it finds the command the user entered.
-- execute.c - execute the command.
-- prompt.c - it use getline system call to read the input from the user and run infinite loop with fork to keep prompt going.
+- [main.c](https://github.com/Yakob72119/simple_shell/blob/master/main.c) - initialize the program with infinite loop by call the prompt function
+- [README.md](https://github.com/Yakob72119/simple_shell/blob/master/README.md) - description about the project repo
+- [AUTHORS](https://github.com/Yakob72119/simple_shell/blob/master/AUTHORS) - file at the  root of your repository, listing all individuals having contributed content to the repository. 
+- [builtins.c](https://github.com/Yakob72119/simple_shell/blob/master/builtins.c) - These functions are part of a shell program and handle the env (environment variables) and quit (exit the shell) commands. The behavior of quit depends on the number of arguments provided.
+- [helpers.c](https://github.com/Yakob72119/simple_shell/blob/master/helpers.c) - These functions provide basic string manipulation and text processing capabilities that are often used in shell programs or other applications that work with character data.
+- [helpers_one.c](https://github.com/Yakob72119/simple_shell/blob/master/helpers_one.c) - These functions provide basic string manipulation operations like comparison, concatenation, and searching for characters within strings. They can be used in various string processing tasks within a C program.
+- [helpers_two.c](https://github.com/Yakob72119/simple_shell/blob/master/helpers_two.c) - These functions provide various utility operations, including string tokenization, integer conversion, memory reallocation, signal handling, and comment removal, which can be used in different parts of a C program, such as a shell or text processing application.
+- [init_function.c](https://github.com/Yakob72119/simple_shell/blob/master/init_function.c) - This function appears to be part of a shell program or a similar application where it handles the execution of different types of commands, either in a separate child process or in the current process, based on the command type.
+- [non_interact_function.c](https://github.com/Yakob72119/simple_shell/blob/master/non_interact_function.c) - This function is designed to handle the execution of commands when the shell is running in a non-interactive mode, allowing it to process commands from scripts or input sources other than a terminal.
+- [utils.c](https://github.com/Yakob72119/simple_shell/blob/master/utils.c) - These functions collectively provide essential functionality for parsing, executing and handling various types of shell commands, making them suitable for use in a shell program or similar applications.
 
 # Tasks
 
