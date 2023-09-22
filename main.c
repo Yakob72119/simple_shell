@@ -8,8 +8,8 @@
 /**
  * main - Shell main code starting.
  * @argc: The number of passed arguments.
- * @argv: parsed program arguments. 
- * 
+ * @argv: A parsed program arguments.
+ *
  * Return: 0 when it success
  */
 int main(int argc __attribute__((unused)), char **argv)
@@ -17,6 +17,7 @@ int main(int argc __attribute__((unused)), char **argv)
 	char **current_command = NULL;
 	int x, type_command = 0;
 	size_t n = 0;
+
 	signal(SIGINT, ctrl_c_handler);
 	shell_name = argv[0];
 	while (1)
