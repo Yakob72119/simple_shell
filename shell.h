@@ -1,29 +1,27 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef simple_shell
+#define simple_shell
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <sys/wait.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <sys/stat.h>
 #include <dirent.h>
-#include <signal.h>
 #include <errno.h>
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
 
 
 /*constant variables*/
 #define EXTERNAL_COMMAND 1
-#define INTERNAL_COMMAND 2
 #define INVALID_COMMAND -1
+#define INTERNAL_COMMAND 2
 #define PATH_COMMAND 3
-
-
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
 /**
- *struct map - That maps commands name to a function. 
+ *struct map - That maps commands name to a function.
  *
  *@command_name: The command name.
  *@func: the function that executes the command
@@ -35,47 +33,51 @@ typedef struct map
 	void (*func)(char **command);
 } function_map;
 
-extern char **environ;
+extern char *shell_name;
 extern char *line;
 extern char **commands;
-extern char *shell_name;
 extern int status;
+extern char **environ;
+
+
+/*functions in helperstwo*/
+char *_strcat(char *, char *);
+int _strcmp(char *, char *);
+char *_strchr(char *, char);
+int _strcspn(char *, char *);
+int _strspn(char *, char *);
+
+
+/*functions in utils*/
+char *_getenv(char *);
+void execute_command(char **, int);
+char *check_path(char *);
+int parse_command(char *);
+void (*get_func(char *))(char **);
+
 
 /*functions in helpers*/
-void print(char *, int);
 char **tokenizer(char *, char *);
 void remove_newline(char *);
+void print(char *, int);
 int _strlen(char *);
 void _strcpy(char *, char *);
 
-/*functions in helpers2*/
-int _strcmp(char *, char *);
-char *_strcat(char *, char *);
-int _strspn(char *, char *);
-int _strcspn(char *, char *);
-char *_strchr(char *, char);
 
-/*functions in helpers3*/
-char *_strtok_r(char *, char *, char **);
-int _atoi(char *);
+/*functions in helpersthree*/
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-void ctrl_c_handler(int);
 void remove_comment(char *);
-
-/*functions in utils*/
-int parse_command(char *);
-void execute_command(char **, int);
-char *check_path(char *);
-void (*get_func(char *))(char **);
-char *_getenv(char *);
-
-/*functions in built_in*/
-void env(char **);
-void quit(char **);
+int _atoi(char *);
+void ctrl_c_handler(int);
+char *_strtok_r(char *, char *, char **);
 
 /*functions in main*/
-extern void non_interactive(void);
 extern void initializer(char **current_command, int type_command);
+extern void non_interactive(void);
 
+/*functions in built_in*/
+void quit(char **);
+void env(char **);
 
 #endif
+
