@@ -1,6 +1,6 @@
 #include "shell.h"
 
-/** 
+/**
  * parse_command - That determines the command type.
  * @command: parsed command.
  *
@@ -33,7 +33,7 @@ int parse_command(char *command)
 
 /**
  * execute_command - command executes a by their types.
- * @tokenized_command: the command form of tokenized. 
+ * @tokenized_command: the command form of tokenized.
  * @command_type: The command type.
  *
  * Return: Nothing.
