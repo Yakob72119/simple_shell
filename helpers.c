@@ -2,7 +2,7 @@
 
 /**
  *tokenizer - This func tokenizes the input string and stores it in an array.
- *@input_string: The string to be tokenized.
+ *@input_string: The string to be further tokenized.
  *@delim: The delimiter to be used, which should be a one-character string.
  *
  *Return: An array of tokens.
