@@ -110,8 +110,8 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 
 /**
  * _getline - Reads the next line of input from STDIN.
- * 
- * @info: A parameter struct that manages the dynamic buffer for the input line.
+ *
+ * @info: A parameter struct that manage the dynamic buffer the input line.
  * @ptr: A pointer to either a preallocated buffer or NULL.
  * @length: The size of the preallocated 'ptr' buffer if not NULL.
  *
